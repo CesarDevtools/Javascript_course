@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+
+   
+    <script>
+
+        let variable1 = 3;
+        console.log(variable1);
+
+
+        let calculation = 2 + 2;
+        console.log(calculation);
+        console.log(calculation + 2);
+
+
+        let result = calculation + 2;
+        console.log(result);
+
+        let message = "Hello, World!";
+        console.log(message);
+
+        // Reassigning variable1
+        // This will overwrite the previous value of variable1
+
+        variable1 = 5;
+        console.log(variable1);
+
+        variable1 = variable1 + 1;
+        console.log(variable1);
+
+        // const cant be reassigned
+        const variable2 = 3;
+
+        // another way to declare a variable
+        var variable3 = 4;
+
+        // typeof shows the type of the variable
+        console.log(typeof variable1); // number
+        console.log(typeof message); // string
+    </script>
+</body>
+</html>
