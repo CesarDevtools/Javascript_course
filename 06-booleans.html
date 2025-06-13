@@ -47,7 +47,55 @@
         };
 
 
-        //
+        //AND operator
+
+        console.log(true && true);   
+
+        console.log(0.2 >=0 && 0.2 < 1/3);
+
+
+        //OR operator
+
+        console.log(true || false);
+
+        //NOT operator
+
+        console.log(!true);
+
+
+
+
+// truthy and falsy values. 
+// Falsy values (false,  0, '', undefined, null, NaN)  any other value is truthy
+
+
+
+if (5) {
+    console.log('truthy')
+}
+
+
+// 
+const cartQuantity = 1;
+const cartQuantity2 = 0;
+// since the cartQuantity is not 0 it'll behave like true truthy. if it was equal to 0 it'd behave like falsy 
+
+//so we using this as a shortcut to not type: cartQuantity > 0
+
+if (cartQuantity) {
+    console.log('cart has products')
+};
+
+if (cartQuantity2) {
+    console.log('cart has products')
+};
+
+
+//shortcuts for  if-statements
+
+
+
+
 
 
     </script>

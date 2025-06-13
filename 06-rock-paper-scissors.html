@@ -3,52 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booleans</title>
+    <title>Rock Paper Scissors</title>
 </head>
 <body>
+<!--This will be a rock paper scissors proyect-->
+    <p>
+        Rock Paper Scissors
+    </p>
 
+    <!--Computer randomly selects a move and you select a move-->
+    <button onclick="
+        const randomNumber = Math.random();
+        let computerMove = '';
+
+        if (randomNumber >= 0 && randomNumber < 1 / 3) {
+             computerMove = ('Rock');
+        } 
+        else if (randomNumber >= 1 / 3 && randomNumber < 2/3) {
+             computerMove = ('Paper');
+        }
+
+        else if (randomNumber >= 2 / 3 && randomNumber < 1) {
+            computerMove = ('Scissors');
+        }
+        
+
+        //Compare the moves to get the result
+        
+        let result = ''
+
+        if (computerMove === 'Rock') {
+            result = 'Tie-'
+        }
+
+        else if (computerMove === 'Paper') {
+            result = 'You lose'
+        }
+
+        else if (computerMove === 'Scissors') {
+            result = 'You win.'
+        }
+
+        //Display the result in a popup
+        alert(`You picked rock. Computer picked ${computerMove}. ${result}`);
+
+    ">Rock
+        
+    </button>
+
+      <!--Computer randomly selects a move and you select a move-->
+    <button onclick="
+    
+    const randomNumber = Math.random();
+    let computerMove = '';
+
+        if (randomNumber >= 0 && randomNumber < 1 / 3) {
+             computerMove = ('Rock');
+        } 
+        else if (randomNumber >= 1 / 3 && randomNumber < 2/3) {
+             computerMove = ('Paper');
+        }
+
+        else if (randomNumber >= 2 / 3 && randomNumber < 1) {
+            computerMove = ('Scissors');
+        }
+        
+
+        //Compare the moves to get the result
+        
+        let result = ''
+
+        if (computerMove === 'Rock') {
+            result = 'You win'
+        }
+
+        else if (computerMove === 'Paper') {
+            result = 'Tie'
+        }
+
+        else if (computerMove === 'Scissors') {
+            result = 'You lose.'
+        }
+
+        //Display the result in a popup
+        alert(`You picked Paper. Computer picked ${computerMove}. ${result}`);
+    
+    
+    ">Paper
+
+    </button>
+
+    <button onclick="
+        
+        const randomNumber = Math.random();
+    let computerMove = '';
+
+        if (randomNumber >= 0 && randomNumber < 1 / 3) {
+             computerMove = ('Rock');
+        } 
+        else if (randomNumber >= 1 / 3 && randomNumber < 2/3) {
+             computerMove = ('Paper');
+        }
+
+        else if (randomNumber >= 2 / 3 && randomNumber < 1) {
+            computerMove = ('Scissors');
+        }
+        
+
+        //Compare the moves to get the result
+        
+        let result = ''
+
+        if (computerMove === 'Rock') {
+            result = 'You lose.'
+        }
+
+        else if (computerMove === 'Paper') {
+            result = 'You win.'
+        }
+
+        else if (computerMove === 'Scissors') {
+            result = 'Tie.'
+        }
+
+        //Display the result in a popup
+        alert(`You picked Scissors. Computer picked ${computerMove}. ${result}`);
+    
+    
+    ">
+        Scissors
+    </button>
    
     <script>
 
-        //the only booleans values
-        true
-        false
        
-        console.log(3 > 5 - 5);
-
-        console.log(5 === '5.00');
-
-
-        //if statements
-
-        if (false){
-            console.log("hello");
-        }
-
-        else {
-            console.log("else")
-        };
-
-        // See if someone is old enough to drive
-
-
-        const age = 15;
-
-        if (age >= 16) {
-            console.log('you can drive')
-        }
-
-        else if (age >= 14) {
-            console.log('almost there')
-        } 
-
-        else {
-            console.log('you  cant drive')
-        };
-
-
-        //
-
 
     </script>
 </body>
