@@ -9,7 +9,7 @@
 
    
     <script>
-
+/*
         //the only booleans values
         true
         false
@@ -89,15 +89,33 @@ if (cartQuantity) {
 if (cartQuantity2) {
     console.log('cart has products')
 };
-
+*/
 
 //shortcuts for  if-statements
 
+//ternary operator ?
+ const result = 0 ? 'truthy' : 'falsy'
+ console.log(result)
 
 
+ //guard operator &&
+
+//when first value is falsy, the operator will guard the next result and give the first one insteads
+ false && console.log('hello')
+
+ const message = 5 && 'hello'
+ console.log(message)
+
+// Default operator (similar to guard but uses or " || ")
+//the difference here is that when the first value is falsy, it will give the second one intead
+let currency = 'EUR' || 'USD';
+console.log (currency)
+
+let currency2 = undefined ||'USD'
+console.log(currency2)
 
 
-
-    </script>
+//Shortcuts are not mandatory to use but they will save us some code
+</script>
 </body>
 </html>
