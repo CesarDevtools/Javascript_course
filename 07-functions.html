@@ -19,9 +19,13 @@
     function1();
 */
 
-function calculateTax() {
-    
-}
+//parameters // parameters can have default values
+function calculateTax(cost, tacPercent = 0.1) {
+    console.log(cost * tacPercent); //calculating the tax
+};
+
+calculateTax(1000, 0.2); //calling the function with an argument
+calculateTax(2000, 0.4); 
 </script>
 </body>
 </html>
